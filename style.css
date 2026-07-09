@@ -1,0 +1,101 @@
+/* Configuração global e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Paleta de Cores Tons Pastéis */
+:root {
+    --bg-color: #FDF0D5;      /* Amarelo pastel suave */
+    --primary-color: #C7D9B7;  /* Verde menta pastel */
+    --secondary-color: #F4A2A2;/* Rosa pastel suave */
+    --text-dark: #3D3A35;      /* Marrom escuro para leitura */
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções (Cards) */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+/* Lista */
+.card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #e58b8b;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #7a7571;
+}
